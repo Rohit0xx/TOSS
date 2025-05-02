@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .coin {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image:  url("coin/3180-200.jpg");
+    background-size: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 1s;
+  }
+  
+  .flip {
+    animation: flip 1s;
+  }
+  
+  @keyframes flip {
+    0% { transform: rotateY(0); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+  }
+  
+  button {
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #31d478;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ec0f07;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+  }
+  
